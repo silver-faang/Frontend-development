@@ -1,0 +1,27 @@
+.input {
+    border-radius: 0.2rem;
+    border: none;
+}
+input:focus{
+    outline: 2px solid #00ADB5;
+}
+
+.primary {
+    outline: 1px solid purple;
+}
+.secondary {
+    outline: 1px solid red;
+}
+
+.large {
+    padding: 0.18px;
+    min-height: 3rem;
+}
+.medium {
+    padding: 0.1px;
+    min-height: 2rem;
+}
+.small {
+    padding: 0.5px;
+    min-height:1rem;
+}
