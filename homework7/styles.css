@@ -86,10 +86,16 @@ body,p,h1,h2 {
 .container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 5rem 16px 16px;
+    padding: 0 16px; 
 }
-.section {
-    padding: 25px 0;
+.section{
+    padding-top: 70px;
+}
+.project-section{
+    padding-top: 70px;
+}
+.hero{
+    padding-top: 70px;
 }
 .section-title {
     font-size: 2rem;
