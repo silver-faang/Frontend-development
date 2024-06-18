@@ -56,7 +56,8 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto excepturi in temporibus reiciendis
                     dolor
                     maxime. Necessitatibus, facilis consectetur sed iure omnis eos, repellendus inventore modi magnam
-                    deleniti assumenda possimus laborum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto excepturi in temporibus reiciendis
+                    deleniti assumenda possimus laborum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                    excepturi in temporibus reiciendis
                     dolor
                     maxime. Necessitatibus, facilis consectetur sed iure omnis eos, repellendus inventore modi magnam
                     deleniti assumenda possimus laborum?
@@ -103,50 +104,65 @@
                 </article>
             </div>
         </section>
-        <section class="section" aria-label="projects" id="projects">
+        <section class="project-section" aria-label="projects" id="projects">
             <h2 class="section-title">Projects</h2>
-            <div>
-                <img src="resources/thomas.jpg" width="500" alt="Photo">
-                <h3>
-                    Project 1
-                </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ratione consectetur accusamus
-                    reiciendis temporibus, in officia aliquam nesciunt voluptates corrupti! Fuga eius delectus omnis
-                    odit iusto maiores, molestias odio rem.</p>
-                <a href="project1.html">View more</a>
+            <div class="project">
+                <img src="resources/thomas.jpg" alt="Photo">
+                <div>
+                    <h3>
+                        Project 1
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ratione consectetur accusamus
+                        reiciendis temporibus, in officia aliquam nesciunt voluptates corrupti! Fuga eius delectus omnis
+                        odit iusto maiores, molestias odio rem.</p>
+                    <a href="project1.html">View more</a>
             </div>
-            <div>
-                <img src="resources/weather.jpg" width="500" alt="Photo">
-                <h3>
-                    Project 2
-                </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ratione consectetur accusamus
-                    reiciendis temporibus, in officia aliquam nesciunt voluptates corrupti! Fuga eius delectus omnis
-                    odit iusto maiores, molestias odio rem.</p>
-                <a href="project2.html">View more</a>
             </div>
-            <div>
-                <img src="resources/anime.jpg" width="500" alt="Photo">
-                <h3>
-                    Project 3
-                </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ratione consectetur accusamus
-                    reiciendis temporibus, in officia aliquam nesciunt voluptates corrupti! Fuga eius delectus omnis
-                    odit iusto maiores, molestias odio rem.</p>
-                <a href="project3.html">View more</a>
+            <div class="project">
+                <img src="resources/weather.jpg" alt="Photo">
+                <div>
+                    <h3>
+                        Project 2
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ratione consectetur accusamus
+                        reiciendis temporibus, in officia aliquam nesciunt voluptates corrupti! Fuga eius delectus omnis
+                        odit iusto maiores, molestias odio rem.</p>
+                    <a href="project2.html">View more</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="resources/anime.jpg" alt="Photo">
+                <div>
+                    <h3>
+                        Project 3
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ratione consectetur accusamus
+                        reiciendis temporibus, in officia aliquam nesciunt voluptates corrupti! Fuga eius delectus omnis
+                        odit iusto maiores, molestias odio rem.</p>
+                    <a href="project3.html">View more</a>
+                </div>
             </div>
         </section>
         <section class="section" aria-label="contact" id="contact">
             <h2 class="section-title">Get in touch</h2>
-            <form action="https://formsubmit.co/silverfangstudent@gmail.com" method="POST">
-                <label for="name">Name</label>
-                <input id="name" name="Name" placeholder="Name" required minlength="2" />
-                <label for="email">Email</label>
-                <input id="email" name="Email" placeholder="id@gmail.com" required pattern="test" />
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Enter your message" minlength="10" maxlength="200"
-                    required></textarea>
-                <button type="submit">Send</button>
+            <form class="contact-form" action="https://formsubmit.co/silverfangstudent@gmail.com" method="POST">
+                <div>
+                    <label for="name" class="contact-form-label">Name</label>
+                    <input
+                    class="contact-form-input" id="name" name="Name" placeholder="Name" required minlength="2" />
+                </div>
+                <div>
+                    <label for="email" class="contact-form-label">Email</label>
+                    <input
+                    class="contact-form-input" id="email" name="Email" placeholder="id@gmail.com" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" type="email" />
+                </div>
+                <div>
+                    <label for="message" class="contact-form-label">Message</label>
+                    <textarea 
+                    class="contact-form-textarea" id="message" name="message" placeholder="Enter your message" minlength="10"
+                        maxlength="200" required></textarea>
+                </div>
+                <button type="submit" class="contact-form-submit-btn">Send</button>
             </form>
         </section>
     </main>
