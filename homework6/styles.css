@@ -1,0 +1,134 @@
+/* 222831
+393E46
+00ADB5
+EEEEEE */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-weight: 400;
+    font-family:"Ubuntu", sans-serif;
+}
+body,p,h1,h2 {
+    margin:0;
+}
+.nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0 1rem;
+    min-height: 4rem;
+    background-color: #00ADB5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    color: #EEEEEE;
+}
+
+.nav-link {
+    text-decoration: none;
+    transition: font-weight .1s, color .1s;
+    &:hover {
+        color: #222831;
+        font-weight: 800;
+    }
+}
+.about-wrapper {
+    display: flex;
+    gap: 25px;
+}
+.about-img-container {
+    flex: 1;
+}
+.about-img {
+    @media screen and (max-width: 700px) {
+        display: inline-block;  
+    }
+}
+.services-wrapper {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+    @media screen and (max-width: 700px) {
+        flex-direction: column;
+    }
+}
+.service-item {
+    color:#222831;
+    background-color: #898E96;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.services-subtitle {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5rem 16px 16px;
+}
+.section {
+    padding: 25px 0;
+}
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.hero {
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.hero-img-container {
+    max-width: 500px;
+}
+
+.hero-img {
+    max-width: 100%;
+}
+
+.hero-cta {
+    margin-top: 1rem;
+}
+
+
+.cta {
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    color: #EEEEEE;
+}
+
+.cta-primary {
+    background-color: #393E46;
+    transition: background-color 0.1s ease-in-out;
+
+    &:hover {
+        background-color: #00ADB5;
+        color: #222831;
+    }
+}
