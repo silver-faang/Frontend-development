@@ -108,38 +108,34 @@
             <h2 class="section-title">Projects</h2>
             <div class="project">
                 <img src="resources/thomas.jpg" alt="Photo">
-                <div>
-                    <h3>
-                        Project 1
-                    </h3>
+                <div class="project-content">
+                    <h3>Project 1</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ratione consectetur accusamus
                         reiciendis temporibus, in officia aliquam nesciunt voluptates corrupti! Fuga eius delectus omnis
                         odit iusto maiores, molestias odio rem.</p>
-                    <a href="project1.html">View more</a>
-            </div>
-            </div>
-            <div class="project">
-                <img src="resources/weather.jpg" alt="Photo">
-                <div>
-                    <h3>
-                        Project 2
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ratione consectetur accusamus
-                        reiciendis temporibus, in officia aliquam nesciunt voluptates corrupti! Fuga eius delectus omnis
-                        odit iusto maiores, molestias odio rem.</p>
-                    <a href="project2.html">View more</a>
+                    <a href="project1.html" class="project-link">View more</a>
                 </div>
             </div>
+            
             <div class="project">
-                <img src="resources/anime.jpg" alt="Photo">
-                <div>
-                    <h3>
-                        Project 3
-                    </h3>
+                <img src="resources/weather.jpg" alt="Photo">
+                <div class="project-content">
+                    <h3>Live Weather App</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ratione consectetur accusamus
                         reiciendis temporibus, in officia aliquam nesciunt voluptates corrupti! Fuga eius delectus omnis
                         odit iusto maiores, molestias odio rem.</p>
-                    <a href="project3.html">View more</a>
+                    <a href="project2.html" class="project-link">View more</a>
+                </div>
+            </div>
+            
+            <div class="project">
+                <img src="resources/anime.jpg" alt="Photo">
+                <div class="project-content">
+                    <h3>Project 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ratione consectetur accusamus
+                        reiciendis temporibus, in officia aliquam nesciunt voluptates corrupti! Fuga eius delectus omnis
+                        odit iusto maiores, molestias odio rem.</p>
+                    <a href="project3.html" class="project-link">View more</a>
                 </div>
             </div>
         </section>
@@ -170,7 +166,18 @@
             <div class="footer-logo"><b>Portfolio  project</b></div>
             <p class="footer-text">©Dhruv Joshi. All rights reserved</p>
         </footer>
-    
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+        
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+            
 </body>
 
 </html>
