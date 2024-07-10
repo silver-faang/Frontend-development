@@ -14,7 +14,7 @@ const getWeather=() =>{
     const city = userInputElement.value;
     const errorMessage = 'Something went wrong! Please try again!  ';
 
-    const apikey='e816acbb0ba5c3701ff9826be8c8a9ef';
+    const apikey='';
     
     //input validate
     if(!city) {
